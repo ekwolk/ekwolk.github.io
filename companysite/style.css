@@ -57,12 +57,7 @@ body {
     width: auto; /* Maintain aspect ratio */
     max-width: 150px; /* Adjust this value based on how small you want the logo */
     height: auto; /* Automatically adjust height to maintain aspect ratio */
-}
-
-@media (max-width: 600px) {
-    .logo_img {
-        max-width: 100px; /* Adjust the size for mobile view */
-    }
+    
 
 .search_icon {
     display: inline-block;
