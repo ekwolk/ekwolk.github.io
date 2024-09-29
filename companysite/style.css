@@ -26,8 +26,8 @@ body {
 
 .topofpage {
     display: flex;
-    justify-content: center; /* This centers the logo horizontally */
-    align-items: center; /* Vertically align items */
+    justify-content: space-between; /* Spread items across the available space */
+    align-items: center; /* Vertically center all items */
     height: 80px;
     background-color: white;
     position: relative;
@@ -39,24 +39,25 @@ body {
 }
 
 .left-nav {
-    flex: 1; /* Take up available space on the left */
     margin-left: 22px;
 }
 
 .right-nav {
-    flex: 1; /* Take up available space on the right */
     margin-right: 22px;
 }
 
 .logo {
-    max-width: 300px;
     text-align: center;
+    margin-left: auto;  /* Automatically center the logo */
+    margin-right: auto; /* Automatically center the logo */
+    max-width: 200px;
 }
 
 .logo_img {
     width: auto; /* Maintain aspect ratio */
-    max-width: 150px; /* Adjust this value based on how small you want the logo */
-    height: auto; /* Automatically adjust height to maintain aspect ratio */
+    max-width: 150px; /* Adjust the size for a better fit */
+    height: auto; /* Keep height proportional */
+}
     
 
 .search_icon {
