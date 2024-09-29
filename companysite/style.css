@@ -34,12 +34,18 @@ body {
 }
 
 .topofpage {
-    display: flex;
-    justify-content: space-between; /* Spread items across the available space */
-    align-items: center; /* Vertically center all items */
-    height: 80px;
+    position: fixed;
+    top: 0;  /* Fixes the navigation to the top */
+    left: 0;  /* Aligns to the left edge of the screen */
+    width: 100%;  /* Full width across the screen */
+    z-index: 1000;  /* Ensure it stays on top of other content */
     background-color: white;
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);  /* Optional: Adds a shadow for visibility */
 }
 
 .left-nav, .right-nav {
