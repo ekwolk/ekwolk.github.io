@@ -1,0 +1,100 @@
+body {
+    
+    font-family: "EB Garamond", serif;
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #fff;
+    margin:0;
+    padding:14px;
+
+}
+
+
+.outer {
+    text-align: left;
+
+}
+
+.page {
+    margin-top:14px;
+    background-color: white;
+    max-width: 1200px;
+    width: 100%;
+    display:inline-block;
+
+}
+
+.topofpage {
+    display: flex;
+    justify-content: center; /* This centers the logo horizontally */
+    align-items: center; /* Vertically align items */
+    height: 80px;
+    background-color: white;
+    position: relative;
+}
+
+.left-nav, .right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.left-nav {
+    flex: 1; /* Take up available space on the left */
+    margin-left: 22px;
+}
+
+.right-nav {
+    flex: 1; /* Take up available space on the right */
+    margin-right: 22px;
+}
+
+.logo {
+    max-width: 300px;
+    text-align: center;
+}
+
+.logo_img {
+    width: auto; /* Maintain aspect ratio */
+    max-width: 150px; /* Adjust this value based on how small you want the logo */
+    height: auto; /* Automatically adjust height to maintain aspect ratio */
+}
+
+@media (max-width: 600px) {
+    .logo_img {
+        max-width: 100px; /* Adjust the size for mobile view */
+    }
+
+.search_icon {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+.search_img {
+    width:20px;
+    height: auto;
+}
+
+a {
+    color: darkblue;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    margin-right:30px;
+
+}
+
+a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 4px;
+    text-decoration-color: lightblue;
+
+}
+
+.content {
+    background-color: white;
+    text-align: left;
+    padding: 20px;
+
+}
+	  
