@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+}
+
+.outer {
+    text-align: center;
+}
+
+.page {
+    position: relative;
+    margin-top: 0px;
+    background-color: #FFF;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    text-align: left;
+    height: 99vh;
+}
+
+/* Sticky Navbar */
+.topofpage {
+    position: sticky;
+    top: 0;
+    background-color: #333;
+    z-index: 1000;
+    width: 100%;
+    text-align: center;
+}
+
+.topofpage ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+.topofpage ul li {
+    display: inline;
+}
+
+.topofpage ul li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.topofpage ul li a:hover {
+    background-color: #111;
+}
+
+.tile {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+
+}
+
+.spacing {
+
+  height: 80px;
+  display: inline-block;
+
+}
+
+.headlinetype {
+  font-family: "Garamond", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  padding-left: 30px;
+  padding-top: 500px;
+
+}
+
+.tilebg1 {
+
+  background-image: url("img/soccer.jpg");
+  
+
+}
+
+.tilebg2 {
+
+  background-image: url("img/nurse.jpg");
+ 
+
+}
+.tilebg3 {
+
+  background-image: url("img/patient.jpg");
+
+}
+
+.tilebg4 {
+
+  background-image: url("img/grandma.jpg");  
+
+}
+
+.tilebg5 {
+
+  background-image: url("img/hurricane.jpg");  
+
+}
+
+.tilebg6 {
+
+  background-image: url("img/crisis.jpg");  
+
+}
+
