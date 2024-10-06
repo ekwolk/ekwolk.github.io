@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,99 +7,85 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="navbar">
-        <div class="search">
-            <img src="search.png" alt="Search Icon" class="search_icon">
-        </div>
+    <nav class="navbar" id="navbar">
         <div class="logo">
-            <img src="logo.png" alt="Elevance Health Logo" class="imglogo">
+            <img src="img/logo.png" alt="Elevance Health Logo" class="logo-img">
+        </div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Who We Are</a>
+            <a href="#">Our Approach to Health</a>
+            <a href="#">Research</a>
+            <a href="#">Stories</a>
+            <a href="#">Newsroom</a>
+            <a href="#">Investors</a>
+        </div>
+        <div class="search">
+            <img src="img/search.png" alt="Search Icon" class="search-icon">
         </div>
     </nav>
-</body>
-</html>
 
-    <div class="topofpage">
-        <div class="logo">
-            <img src="img/logo.png" alt="Logo" class="imglogo"/>
-        </div>
-
-<div class="navbar" id="navbar">
-        <a href="index.html">Home</a>
-        <a href="we_are.html">Who We Are</a>
-        <a href="our_approach.html">Our Approach to Health</a>
-        <a href="research.html">Research</a>
-        <a href="stories.html">Stories</a>
-        <a href="newsroom.html">Newsroom</a>
-        <a href="investors.html">Investors</a>
-    
-</div>
-
-<div class="search">
-            <a href="search.html">
-                <img src="img/search.png" alt="search function" class="search_icon"/>
-            </a>
-        </div>
-        
-        <div class="hamburger" onclick="toggleMenu()">☰</div>
-    </div>
+    <div class="hamburger" onclick="toggleMenu()">☰</div>
 
     <div class="overlay" id="overlay">
         <div class="close" onclick="toggleMenu()">X</div>
         <div class="overlay-content">
-            <a href="index.html">Home</a>
-            <a href="we_are.html">Who We Are</a>
-            <a href="our_approach.html">Our Approach to Health</a>
-            <a href="research.html">Research</a>
-            <a href="stories.html">Stories</a>
-            <a href="newsroom.html">Newsroom</a>
-            <a href="investors.html">Investors</a>
+            <a href="#">Home</a>
+            <a href="#">Who We Are</a>
+            <a href="#">Our Approach to Health</a>
+            <a href="#">Research</a>
+            <a href="#">Stories</a>
+            <a href="#">Newsroom</a>
+            <a href="#">Investors</a>
         </div>
     </div>
 
-<div class="outer">
-    <div class="outer tile tilebg1"></div>
-    <div class="page"><div class="content">Elevating whole health and advancing health beyond healthcare</div></div>
-</div>
+    <div class="tiles-container">
+        <div class="tile tilebg1"></div>
+        <div class="tile tilebg2"></div>
+        <div class="tile tilebg3"></div>
+        <div class="tile tilebg4"></div>
+        <div class="tile tilebg5"></div>
+        <div class="tile tilebg6"></div>
+    </div>
 
-<div class="outer">
+    <div class="outer tile tilebg1">
+        <div class="page">
+            <div class="content">Elevating whole health and advancing health beyond healthcare</div>
+        </div>
+    </div>
+
     <div class="outer tile tilebg2">
-    <div class="page">
-        <div class="content">Ideas that explore how to elevate and advance health</div></div>
+        <div class="page">
+            <div class="content">Ideas that explore how to elevate and advance health</div>
+        </div>
     </div>
-</div>
 
-<dic class="outer">
     <div class="outer tile tilebg3">
-    <div class="page">
-        <div class="content">A customer-centered health system story</div>
+        <div class="page">
+            <div class="content">A customer-centered health system story</div>
+        </div>
     </div>
-</div>
 
-
-<dic class="outer">
     <div class="outer tile tilebg4">
-    <div class="page">
-        <div class="content">Elevance Health's affiliated 2025 Medicare advantage plans</div>
+        <div class="page">
+            <div class="content">Elevance Health's affiliated 2025 Medicare advantage plans</div>
+        </div>
     </div>
-</div>
 
-
-<dic class="outer">
     <div class="outer tile tilebg5">
-    <div class="page">
-        <div class="content">Responses to communities affected by Hurricane Helene</div>
+        <div class="page">
+            <div class="content">Responses to communities affected by Hurricane Helene</div>
+        </div>
     </div>
-</div>
 
-
-<dic class="outer">
     <div class="outer tile tilebg6">
-    <div class="page">
-        <div class="content">Addressing behavioral health emergencies: the role of crisis call centers</div>
-</div>
-</div>
+        <div class="page">
+            <div class="content">Addressing behavioral health emergencies: the role of crisis call centers</div>
+        </div>
+    </div>
 
-<script>
+    <script>
         function toggleMenu() {
             const overlay = document.getElementById("overlay");
             const navbar = document.getElementById("navbar");
@@ -110,5 +95,4 @@
     </script>
 
 </body>
-
 </html>

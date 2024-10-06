@@ -1,122 +1,106 @@
+/* Reset */
 body {
     margin: 0;
     padding: 0;
     background-color: #293971;
+    font-family: Arial, sans-serif;
 }
 
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fff;
+}
+
+.logo-img {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: #293971;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-links a:hover {
+    color: #5DA5A6;
+}
+
+/* Search Icon */
+.search {
+    display: flex;
+    align-items: center;
+}
+
+.search-icon {
+    width: 30px;
+}
+
+/* Tiles Container */
+.tiles-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-gap: 10px;
+    padding: 20px;
+}
+
+.tile {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+}
+
+.tilebg1 { background-image: url("img/soccer.jpg"); }
+.tilebg2 { background-image: url("img/nurse.jpg"); }
+.tilebg3 { background-image: url("img/patient.jpg"); }
+.tilebg4 { background-image: url("img/grandma.jpg"); }
+.tilebg5 { background-image: url("img/hurricane.jpg"); }
+.tilebg6 { background-image: url("img/crisis.jpg"); }
+
+/* Content inside Tiles */
 .outer {
     position: relative;
     width: 100%;
     height: 400px;
+    margin-bottom: 20px;
 }
-
-.tile {
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-
-}
-
-.tilebg1 {background-image: url("img/soccer.jpg")}
-.tilebg2 {background-image: url("img/nurse.jpg")}
-.tilebg3 {background-image: url("img/patient.jpg")}
-.tilebg4 {background-image: url("img/grandma.jpg")}
-.tilebg5 {background-image: url("img/hurricane.jpg")}
-.tilebg6 {background-image: url("img/crisis.jpg")}
 
 .page {
     position: absolute;
     top: 0;
-    left: 50%; 
+    left: 50%;
     transform: translateX(-50%);
     width: 100%;
-    max-width: 800px; 
-    height: 100%;
-    background-color: #fffff;
-    opacity: 0.6;
-    z-index: 2; 
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.6);
+    z-index: 2;
     color: #293971;
+    padding: 20px;
 }
 
 .content {
     font-weight: 400;
-    display: flex;
     text-align: left;
-    padding-top: 20px; 
-    padding-left: 20px;
 }
 
-.topofpage {
-    position: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    padding: 20px;
-    background-color: #ffff;
-    height: 80px;
-}
-
-.navbar {
-    position: sticky;
-    top: 0;
-    display: flex; 
-    justify-content: center; 
-    flex-grow: 1;
-    font-weight: 400;
-    max-width: 100%;
-    margin-left: 20px;
-    background-color: #ffff;
-    padding: 20px;
-}
-
-.logo {
-    max-width: 1000px;
-    padding-left: 20px;
-}
-
-.img logo {
-    max-width: 150px; /* Adjust size of the logo */
-}
-
-.search {
-    margin-left: auto;
-    text-align: right;
-}
-
-.search img {
-    max-width: 30px; /* Adjust size of the search icon */
-}
-
-a {
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    margin-right: 20px;
-}
-
-a:hover {
-    color: #5DA5A6;
-}
-
-a:active {
-    color: #293971;
-}
-
-a:last-child {
-    margin-right: 0; /* Remove margin for the last link */
-}
-
+/* Hamburger and Overlay Menu for Mobile */
 .hamburger {
-    display: none; /* Hide hamburger by default */
+    display: none;
     font-size: 24px;
-    color: #fff;
+    color: white;
+    position: fixed;
+    top: 20px;
+    right: 20px;
     cursor: pointer;
+    z-index: 11;
 }
 
 .overlay {
@@ -157,12 +141,17 @@ a:last-child {
     display: none; /* Hide the navbar */
 }
 
+/* Media Queries */
 @media (max-width: 828px) {
     .navbar {
-        display: none; /* Hide the navbar at the breakpoint */
+        display: none; /* Hide the navbar at smaller widths */
     }
 
     .hamburger {
-        display: block; /* Show hamburger in mobile view */
+        display: block; /* Show hamburger menu on mobile */
+    }
+
+    .tiles-container {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns on mobile */
     }
 }
