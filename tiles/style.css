@@ -80,6 +80,38 @@ body {
 
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+}
+
+/* Left side (search icon) */
+.left-nav {
+    display: flex;
+    align-items: center;
+}
+
+.search_icon {
+    display: block;
+    width: 30px;
+    height: auto;
+}
+
+/* Right side (logo) */
+.right-nav {
+    display: flex;
+    align-items: center;
+}
+
+.logo_img {
+    width: 120px; /* Adjust size as necessary */
+    height: auto;
+}
+
+
 .tilebg1 {
 
   background-image: url("img/soccer.jpg");
