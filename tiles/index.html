@@ -13,21 +13,48 @@
 
 
 <body>
-dddd
-<!-- Sticky Navbar -->
+
+    <body>
+
+    <div class="topofpage">
+        <div class="logo">
+            <img src="img/logo.png" alt="Logo" class="imglogo"/>
+        </div>
 
 <div class="topofpage">
     <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Who We Are</a></li>
-        <li><a href="#">Our Approach to Health</a></li>
-        <li><a href="#">Research</a></li>
-        <li><a href="#">Stories</a></li>
-        <li><a href="#">Newsroom</a></li>
-        <li><a href="#">Investors</a></li>
+        <a href="index.html">Home</a>
+        <a href="we_are.html">Who We Are</a>
+        <a href="our_approach.html">Our Approach to Health</a>
+        <a href="research.html">Research</a>
+        <a href="stories.html">Stories</a>
+        <a href="newsroom.html">Newsroom</a>
+        <a href="investors.html">Investors</a>
     
     </ul>
 </div>
+
+<div class="search">
+            <a href="search.html">
+                <img src="img/search.png" alt="search function" class="search_icon"/>
+            </a>
+        </div>
+        
+        <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+
+    <div class="overlay" id="overlay">
+        <div class="close" onclick="toggleMenu()">X</div>
+        <div class="overlay-content">
+            <a href="index.html">Home</a>
+            <a href="we_are.html">Who We Are</a>
+            <a href="our_approach.html">Our Approach to Health</a>
+            <a href="research.html">Research</a>
+            <a href="stories.html">Stories</a>
+            <a href="newsroom.html">Newsroom</a>
+            <a href="investors.html">Investors</a>
+        </div>
+    </div>
 
 <div class="left-nav">
     <a href="search.html" class="search_icon">
@@ -90,12 +117,16 @@ dddd
 </div>
 <!--Basic Template -->
 
-</body>
-</html>
-
     </div>
 </div>
-<!--Basic Template -->
+<script>
+        function toggleMenu() {
+            const overlay = document.getElementById("overlay");
+            const navbar = document.getElementById("navbar");
+            overlay.classList.toggle("active");
+            navbar.classList.toggle("hidden");
+        }
+    </script>
 
 </body>
 
