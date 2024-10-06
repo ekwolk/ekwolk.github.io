@@ -5,11 +5,29 @@ body {
 }
 
 .outer {
-    text-align: center;
     position: relative;
     width: 100%;
     height: 400px;
 }
+
+.tile {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.tilebg1 {background-image: url("img/soccer.jpg")}
+.tilebg2 {background-image: url("img/nurse.jpg")}
+.tilebg3 {background-image: url("img/patient.jpg")}
+.tilebg4 {background-image: url("img/grandma.jpg")}
+.tilebg5 {background-image: url("img/hurricane.jpg")}
+.tilebg6 {background-image: url("img/crisis.jpg")}
 
 .page {
     position: absolute;
@@ -20,7 +38,7 @@ body {
     max-width: 800px; 
     height: 100%;
     background-color: #fffff;
-    opacity: 0.7;
+    opacity: 0.6;
     z-index: 2; 
     color: #293971;
 }
@@ -34,7 +52,7 @@ body {
 }
 
 .topofpage {
-    position: sticky;
+    position: flex;
     justify-content: center;
     align-items: center;
     flex-direction: row;
@@ -44,41 +62,11 @@ body {
     height: 80px;
 }
 
-.tile {
-    position: absolute;
-    top: 0;
-    left: 0;
-  background-repeat: no-repeat;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-
-}
-
-.tilebg1 {background-image: url("img/soccer.jpg")}
-.tilebg2 {background-image: url("img/nurse.jpg")}
-.tilebg3 {background-image: url("img/patient.jpg")}
-.tilebg4 {background-image: url("img/grandma.jpg")}
-.tilebg5 {background-image: url("img/hurricane.jpg")}
-.tilebg6 {background-image: url("img/crisis.jpg")}
-
-.headlinetype {
-  font-family: "Garamond", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 32px;
-  padding-left: 30px;
-  padding-top: 500px;
-
-}
-
 .navbar {
     position: sticky;
     top: 0;
     display: flex; 
-    justify-content: space-between; 
+    justify-content: center; 
     flex-grow: 1;
     font-weight: 400;
     max-width: 100%;
@@ -116,18 +104,6 @@ a:hover {
     color: #5DA5A6;
 }
 
-/* Left side (search icon) */
-.left-nav {
-    display: flex;
-    align-items: center;
-}
-
-/* Right side (logo) */
-.right-nav {
-    display: flex;
-    align-items: center;
-}
-
 a:active {
     color: #293971;
 }
@@ -141,7 +117,6 @@ a:last-child {
     font-size: 24px;
     color: #fff;
     cursor: pointer;
-    text-transform: uppercase; /* Capitalize the hamburger menu */
 }
 
 .overlay {
